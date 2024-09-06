@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Body background */
+body,html {
+    background-color: #f7f8fa;
+    height: 100%;
+    width: 100%;
+}
+
+.main-container{
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+border-radius: 12px;
+background-color: rgba(148, 144, 144, 0.233);
+}
+
+.nav-item:nth-child(1){
+    background-color: rgba(7, 134, 7, 0.866);
+}
+
+
+
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.30rem 1.75rem;
+    color: white;
+    font-weight: 600;
+color: black;
+
+
+}
+
+
+#first-part{
+    height: calc(50px - 50%);
+}
+
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Section */
+ #img-div{
+    /* background-color: red; */
+    width: 120px;
+    height: 120px;
+}
+
+/* Info Cards */
+.info-card h5 {
+    color: #28a745;
+}
+
+/* Exam Cart */
+.exam-card .progress {
+    height: 10px;
+    border-radius: 0;
+}
+
+.exam-card .progress-bar {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+.profile-div {
+    padding: 14px; 
+    border-radius: 22px;
+    background: white; 
+
+}
+
+.profile-div .profile-btn{
+    border-radius: 18px;
+    background-color: #247124de;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+}
+
+
+.profile-div::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 32px;
+    background: linear-gradient(to bottom, green 50%, yellow 50%);
+    z-index: -1; 
+}
+
+#img-edit{
+    width: fit-content;
+    border-radius: 50%;
+    top: 5px;
+    right: 2px;
+    display: block   
+}
+
+
+
+/* first upper cards */
+.card-logo{
+    width: 60px;
+}
+
+  .cart-icon-layer{
+    background-image: url(./shopping-cart-line.svg);
+    background-repeat: no-repeat;
+    background-size:70px;
+    text-align: left;
+    background-position:right ;
+    border-radius: 18px;
+  }
+
+  .cart-icon-layer h6{
+    line-height: 1rem;
+  }
+
+
+  .cart-icon-layer h5{
+    font-weight: 600;
+    line-height: 1rem;
+  }
+
+  .cart-icon-layer p{
+    width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height:1.2rem;
+    /* font-weight: 500; */
+  }
+
+
+
+  #card-2{
+    background: url(./shopping-cart-line\ copy.svg);
+    background-repeat: no-repeat;
+    background-size:70px;
+    text-align: left;
+    background-position:right ;
+    border-radius: 18px;
+    border: none;
+    z-index:9; 
+  }
+
+  #card-2 #layer{
+    background-color: #9ae89a9e;
+    z-index:-1;
+    border-radius: 18px;
+    opacity: 0.8;
+  }
+
+  #card-2 .card-btn{
+    background-color: #fff;
+  }
+
+  .card-btn{
+    background: #9ae89a9e;
+    border: none;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+

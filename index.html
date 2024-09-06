@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler mx-auto  mb-md-0 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex gap-3">
+                <li class="nav-item ">
+                    <a class="nav-link text-white text-center" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">My Exam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">My Progress Bar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">View Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Change Preference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Billing Details</a>
+                </li>
+                <li class="nav-item d-flex px-2">
+                    <a class="nav-link text-center" href="#">Logout <i class="ri-logout-box-r-line"></i> </a>
+                </li>
+                <!-- Add other menu items here -->
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Section -->
+    <div class="container-fluid py-2" id="first-part">
+        <div class="row px-2">
+            
+            <!-- Left Profile Section -->
+            <div class="col-md-2  p-0 m-0  mb-md-0 mb-3 ">
+                <div class="card shadow text-center mx-auto profile-div">
+                    <div class="position-relative mb-3  rounded-circle mx-auto mb-" id="img-div">
+                        <img src="avatar.webp" alt="Avatar" class="w-100 h-100 border rounded-circle" style="width: 120px;">
+                    <div class="border position-absolute px-1" id="img-edit">
+                        <input type="file" class="position-absolute opacity-0 w-100 h-100" />
+                        <i class="ri-pencil-line "></i>
+                    </div>
+                </div>
+
+                    <h6 class="fw-bold m-0 p-0">Taniya IT</h6>
+                    <button class="btn text-white w-100 mt-2 bg-success profile-btn">Manage Profile</button>
+
+                </div>
+            </div>
+
+            <!-- Right Content Section -->
+            <div class="col-md-10">
+                <div class="row mb-2">
+                    <!-- First Card -->
+                    <div class="col-md-4  mb-md-0 mb-3 ">
+                        <div class="card shadow cart-icon-layer border-0 position-relative">
+                            <div class="px-3 py-2 d-flex flex-column">
+                               <img src="pearson.png" class="card-logo"  />
+                                   <h6>PTE Academic</h6>
+                                   <h5>Full Length</h5>
+                                <h5 class="text-success">Mock</h5>
+                                <p class="mb-0">Get your actual score before the exam with Full Length Mock in just INR 499</p>
+                            </div>
+                            <button class="card-btn py-1 w-100 text-success fw-bold">EXPLORE ALL PRODUCTS <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="col-md-4  mb-md-0 mb-3">
+                        <div class="card shadow cart-icon-layer border-0 position-relative" id="card-2">
+                            <div class="px-3 py-2 d-flex flex-column">
+                               <img src="finalfile.jpg" class="card-logo"  />
+                                   <h6>PTE Academic</h6>
+                                   <h5>Sectional</h5>
+                                <h5 class="text-success">Exam</h5>
+                                <p class="mb-0">Get your actual score before the exam with Full Length Mock in just INR 499</p>
+                            </div>
+                            <button class="card-btn text-black py-1 w-100 text-success fw-bold">EXPLORE ALL PRODUCTS <i class="ri-arrow-right-line"></i></button>
+                            <div class="position-absolute w-100 h-100 " id="layer"></div>
+                        </div>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="col-md-4  mb-md-0 mb-3 ">
+                        <div class="card shadow border-0 cart-icon-layer position-relative">
+                            <div class="px-3 py-2 d-flex flex-column">
+                               <img src="pearson.png" class="card-logo"  />
+                                   <h6>PTE Academic</h6>
+                                   <h5>Question</h5>
+                                <h5 class="text-success">Specific Exam</h5>
+                                <p class="mb-0">Get your actual score before the exam with Full Length Mock in just INR 499</p>
+                            </div>
+                            <button class="card-btn py-1 w-100 text-success fw-bold">EXPLORE ALL PRODUCTS <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end">
+    <button class="border-0 text-white px-2 py-1 rounded" style="background-color: #247124de;" >About PTE <i class="ri-arrow-right-line"></i> </button>
+
+                </div>
+
+                <!-- Exam Cart Section -->
+                
+            </div>
+        </div>
+    </div>
+<div class="container-fluid shadow mx-2 p-0 ">
+    <div class="bg-success py-1 rounded-top text-white px-2 d-flex align-items-center" >
+        <h6>MY EXAM CART</h6>
+
+    </div>
+    <div class="row border p-2">
+
+        <div class="col-md-3 mb-md-0 mb-3">
+     <div class="card p-2 border-0 shadow">
+        <div class="d-flex justify-content-between">
+            <img src="./pearson.png"  style="width: 50px;" alt="">
+            <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+        </div>
+        <div class="exam-card ">
+            <h6 class="p-0 m-0">Mock Exam</h6>
+            <p class="fw-semibold" style="color: #1cc11c;">3/9</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 33%; background-color: #1cc11c;"></div>
+            </div>
+            </div>
+        </div>
+
+    </div>  
+
+    <div class="col-md-3 mb-md-0 mb-3">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Listening Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">1/9</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 10%; background-color: blue;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+
+       <div class="col-md-3 mb-md-0 mb-3">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Reading Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">0/6</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 0%; background-color: #1cc11c;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+
+       <div class="col-md-3 ">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Writing Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">1/6</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 20%; background-color: #615d5d;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+    
+       <div class="col-md-3 mt-3">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Speaking Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">1/6</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 16%; background-color: rgb(71, 68, 68);"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+    
+       <div class="col-md-3 mt-3 ">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Question Specific Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">0/24</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 0%; background-color: #1cc11c;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+
+       <div class="col-md-3 mt-3">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Question Specific Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">0/15</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 0; background-color: #1cc11c;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+       <div class="col-md-3 mt-3">
+        <div class="card p-2 border-0 shadow">
+           <div class="d-flex justify-content-between">
+               <img src="./pearson.png"  style="width: 50px;" alt="">
+               <button class="border-0 bg-black text-white px-1" style="font-size: 12px;">View All</button>
+           </div>
+           <div class="exam-card ">
+               <h6 class="p-0 m-0">Question Specific Exam</h6>
+               <p class="fw-semibold" style="color: #1cc11c;">0/6</p>
+               <div class="progress">
+                   <div class="progress-bar" style="width: 0; background-color: #1cc11c;"></div>
+               </div>
+               </div>
+           </div>
+   
+       </div>  
+
+</div>
+
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
